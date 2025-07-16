@@ -4,17 +4,25 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
     background-color: #1e1e1e;
     padding: 20px;
     text-align: center;
+    background-image: url('https://via.placeholder.com/1920x1080');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav {
     background-color: #2d2d2d;
     padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -37,15 +45,41 @@ main {
     padding: 20px;
 }
 
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .project {
     margin-bottom: 20px;
     padding: 10px;
     background-color: #2d2d2d;
     border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
 }
 
 footer {
     background-color: #1e1e1e;
     padding: 10px;
+    text-align: center;
+}
+
+.parallax {
+    background-image: url('https://via.placeholder.com/1920x1080');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
 }
